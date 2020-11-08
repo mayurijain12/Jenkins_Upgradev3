@@ -20,6 +20,9 @@ pipeline {
             stage('Deploy Production') {
                   steps {
                         echo "Deploying in Production Area"
+                        stage('Deploy Production') {
+                  steps {
+                        echo "Deploying in Production new Area"
                   }
             }
       }
